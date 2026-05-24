@@ -1,0 +1,27 @@
+name: NEXORA Auto Deploy
+
+on:
+  push:
+    paths:
+      - 'release/**'
+
+jobs:
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v4
+
+    - name: Trigger TOTOSHA deployment
+      run: |
+
+        echo "Release detected"
+
+        curl -X POST \
+        -H "Accept: application/vnd.github+json" \
+        -H "Authorization: Bearer ${{ secrets.NEXORA_TOKEN }}" \
+        https://api.github.com/repos/nexora-kz/totosha/actions/workflows/nexora-release-manager.yml/dispatches \
+        -d '{"ref":"main"}'
