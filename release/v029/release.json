@@ -1,0 +1,9 @@
+{
+  "version": "v029",
+  "project": "totosha",
+  "release": true,
+  "status": "approved",
+  "source": "totosha-production-v29-life-build-badge.zip",
+  "target_repo": "nexora-kz/totosha",
+  "target_branch": "main"
+}
