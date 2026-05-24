@@ -1,5 +1,4 @@
 {
-  "active_version": "v029",
-  "auto_deploy": true,
-  "project": "totosha"
+ "active_version":"v029",
+ "auto_deploy":true
 }
