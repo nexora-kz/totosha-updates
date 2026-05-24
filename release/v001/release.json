@@ -1,0 +1,10 @@
+{
+  "version": "v001",
+  "project": "totosha",
+  "target": "production",
+  "release": true,
+  "status": "approved",
+  "description": "Первый тестовый релиз NEXORA Release System",
+  "created_by": "Zhanat",
+  "deploy_to": "totosha.vercel.app"
+}
