@@ -1,4 +1,6 @@
 {
- "active_version":"v032",
- "auto_deploy":true
+ "version":"v032",
+ "status":"approved",
+ "release":true,
+ "source":"totosha-production-v32.zip"
 }
